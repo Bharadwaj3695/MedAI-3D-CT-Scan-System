@@ -1,0 +1,5 @@
+{
+  "name": "MedAI Starter Plugin",
+  "description": "A starter plugin for the MedAI 3D CT Scan System containing useful skills.",
+  "version": "1.0.0"
+}
