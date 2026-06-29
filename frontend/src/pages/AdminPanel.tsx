@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
-import { supabase } from '@/lib/supabase';
+import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Brain, ArrowLeft, Users, BarChart3, Shield } from 'lucide-react';
@@ -12,26 +12,36 @@ const AdminPanel = () => {
   const { data: allUsers = [] } = useQuery({
     queryKey: ['admin-users'],
     queryFn: async () => {
-      const { data } = await supabase.from('profiles').select('*').order('created_at', { ascending: false });
-      return data || [];
+      const token = localStorage.getItem('medai_token');
+      const res = await fetch('/api/admin/users', {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      if (!res.ok) throw new Error('Failed to fetch users');
+      return res.json();
     },
   });
 
   const { data: allScans = [] } = useQuery({
     queryKey: ['admin-scans'],
     queryFn: async () => {
-      const { data } = await supabase.from('scans').select('*, profiles(full_name, email)').order('created_at', { ascending: false }).limit(20);
-      return data || [];
+      const token = localStorage.getItem('medai_token');
+      const res = await fetch('/api/admin/scans', {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      if (!res.ok) throw new Error('Failed to fetch scans');
+      return res.json();
     },
   });
 
   const { data: stats } = useQuery({
     queryKey: ['admin-stats'],
     queryFn: async () => {
-      const { count: totalUsers } = await supabase.from('profiles').select('*', { count: 'exact', head: true });
-      const { count: totalScans } = await supabase.from('scans').select('*', { count: 'exact', head: true });
-      const { count: completedScans } = await supabase.from('scans').select('*', { count: 'exact', head: true }).eq('status', 'completed');
-      return { totalUsers: totalUsers || 0, totalScans: totalScans || 0, completedScans: completedScans || 0 };
+      const token = localStorage.getItem('medai_token');
+      const res = await fetch('/api/admin/stats', {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      if (!res.ok) throw new Error('Failed to fetch stats');
+      return res.json();
     },
   });
 

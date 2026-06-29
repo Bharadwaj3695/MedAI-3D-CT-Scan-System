@@ -1,0 +1,500 @@
+[2026-06-28 17:53:44] CRITICAL in backend.database (database.py:82): SUPABASE_SERVICE_ROLE_KEY is missing from environment/settings.
+[2026-06-28 17:53:47] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-28 17:53:48] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-28 17:58:20] INFO in backend.security (security.py:50): Hashing password using bcrypt.
+[2026-06-28 17:58:20] WARNING in passlib.handlers.bcrypt (bcrypt.py:622): (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+[2026-06-28 17:59:37] INFO in backend.security (security.py:50): Hashing password using bcrypt.
+[2026-06-28 17:59:37] INFO in backend.security (security.py:73): Password verification succeeded.
+[2026-06-28 17:59:38] WARNING in backend.security (security.py:75): Password verification failed (mismatch).
+[2026-06-28 17:59:38] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-28 17:59:38] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-28 18:01:58] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-28 18:01:59] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-28 18:11:00] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-28 18:11:01] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-28 18:13:56] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-28 18:13:57] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-28 18:15:31] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-28 18:15:32] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-28 18:26:41] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-28 18:26:42] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-28 18:35:16] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-28 18:35:16] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-28 18:39:09] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-28 18:39:09] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-28 18:40:39] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-28 18:40:39] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-28 18:51:52] CRITICAL in backend.database (database.py:82): SUPABASE_SERVICE_ROLE_KEY is missing from environment/settings.
+[2026-06-28 18:54:00] CRITICAL in backend.database (database.py:82): SUPABASE_SERVICE_ROLE_KEY is missing from environment/settings.
+[2026-06-28 18:54:24] CRITICAL in backend.database (database.py:82): SUPABASE_SERVICE_ROLE_KEY is missing from environment/settings.
+[2026-06-28 18:54:59] CRITICAL in backend.database (database.py:82): SUPABASE_SERVICE_ROLE_KEY is missing from environment/settings.
+[2026-06-28 18:55:42] CRITICAL in backend.database (database.py:82): SUPABASE_SERVICE_ROLE_KEY is missing from environment/settings.
+[2026-06-29 07:26:15] CRITICAL in backend.database (database.py:82): SUPABASE_SERVICE_ROLE_KEY is missing from environment/settings.
+[2026-06-29 07:43:17] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 07:43:17] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 07:43:46] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 07:43:46] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 07:46:16] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 07:46:17] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 07:46:55] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 07:46:56] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 07:54:19] INFO in backend.routes.auth (auth.py:86): Received signup request for email: user@example.com
+[2026-06-29 07:54:19] INFO in backend.security (security.py:50): Hashing password using bcrypt.
+[2026-06-29 07:54:21] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+[2026-06-29 07:54:21] INFO in backend.routes.auth (auth.py:114): User successfully registered in Supabase Auth. ID: b036c0e9-941c-48bc-96ce-ae030ebc945d
+[2026-06-29 07:54:22] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles "HTTP/2 404 Not Found"
+[2026-06-29 07:54:22] WARNING in backend.routes.auth (auth.py:127): Could not create profile record in 'profiles' table: {'message': "Could not find the table 'public.profiles' in the schema cache", 'code': 'PGRST205', 'hint': None, 'details': None}
+[2026-06-29 07:54:22] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles "HTTP/2 404 Not Found"
+[2026-06-29 07:54:22] WARNING in backend.routes.auth (auth.py:137): Could not assign default role in 'user_roles' table: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 08:00:28] INFO in backend.routes.auth (auth.py:194): Received login request for email: user@example.com
+[2026-06-29 08:00:28] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-29 08:00:28] ERROR in backend.routes.auth (auth.py:249): Login process failed for user@example.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 198, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": data.email,
+        "password": data.password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-29 08:03:00] INFO in backend.routes.auth (auth.py:194): Received login request for email: user@example.com
+[2026-06-29 08:03:01] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-29 08:03:01] ERROR in backend.routes.auth (auth.py:249): Login process failed for user@example.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 198, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": data.email,
+        "password": data.password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-29 08:03:03] INFO in backend.routes.auth (auth.py:194): Received login request for email: user@example.com
+[2026-06-29 08:03:03] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-29 08:03:03] ERROR in backend.routes.auth (auth.py:249): Login process failed for user@example.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 198, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": data.email,
+        "password": data.password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-29 08:11:55] INFO in backend.routes.auth (auth.py:194): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 08:11:56] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 08:11:56] INFO in backend.routes.auth (auth.py:224): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 08:11:57] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 404 Not Found"
+[2026-06-29 08:11:57] WARNING in backend.routes.auth (auth.py:233): Could not retrieve role for user cab62411-45bf-4cb3-b401-de9534575271: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 08:11:57] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 08:11:57] INFO in backend.routes.auth (auth.py:243): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 08:30:30] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 08:30:31] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 08:32:05] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 08:32:05] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 08:32:45] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 08:32:46] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 09:28:33] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 09:28:33] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 09:28:34] INFO in backend.security (security.py:50): Hashing password using bcrypt.
+[2026-06-29 09:28:34] INFO in backend.routes.auth (auth.py:198): Received login request for email: test@example.com
+[2026-06-29 09:28:34] INFO in backend.security (security.py:73): Password verification succeeded.
+[2026-06-29 09:28:34] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 09:28:34] INFO in backend.routes.auth (auth.py:247): Successful login for user: test@example.com. Token generated.
+[2026-06-29 09:28:34] INFO in httpx (_client.py:1025): HTTP Request: POST http://testserver/api/auth/login "HTTP/1.1 200 OK"
+[2026-06-29 09:30:06] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 09:30:07] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 09:30:32] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 09:30:32] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 09:31:24] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 09:31:25] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 09:31:25] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 09:31:25] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 404 Not Found"
+[2026-06-29 09:31:25] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user cab62411-45bf-4cb3-b401-de9534575271: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 09:31:25] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 09:31:25] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 09:32:21] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 09:32:22] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 09:32:22] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 09:32:22] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 404 Not Found"
+[2026-06-29 09:32:22] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user cab62411-45bf-4cb3-b401-de9534575271: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 09:32:22] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 09:32:22] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 09:32:29] INFO in backend.dependencies (dependencies.py:52): Authenticating user via JWT token.
+[2026-06-29 09:32:29] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-29 09:32:29] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+[2026-06-29 09:32:29] ERROR in backend.dependencies (dependencies.py:77): Failed to retrieve user from Supabase: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/dependencies.py", line 66, in get_current_user
+    user_resp = supabase_client.auth.get_user(token)
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 689, in get_user
+    return parse_user_response(self._request("GET", "user", jwt=jwt))
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+[2026-06-29 09:35:35] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 09:35:35] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 09:35:35] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 09:35:36] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 404 Not Found"
+[2026-06-29 09:35:36] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user cab62411-45bf-4cb3-b401-de9534575271: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 09:35:36] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 09:35:36] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 09:35:51] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 09:35:52] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 09:35:52] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 09:35:52] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 404 Not Found"
+[2026-06-29 09:35:52] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user cab62411-45bf-4cb3-b401-de9534575271: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 09:35:52] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 09:35:52] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 09:36:10] INFO in backend.dependencies (dependencies.py:52): Authenticating user via JWT token.
+[2026-06-29 09:36:10] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-29 09:36:10] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+[2026-06-29 09:36:10] ERROR in backend.dependencies (dependencies.py:77): Failed to retrieve user from Supabase: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/dependencies.py", line 66, in get_current_user
+    user_resp = supabase_client.auth.get_user(token)
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 689, in get_user
+    return parse_user_response(self._request("GET", "user", jwt=jwt))
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+[2026-06-29 09:41:37] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 09:41:37] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 09:41:37] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 09:41:38] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 404 Not Found"
+[2026-06-29 09:41:38] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user cab62411-45bf-4cb3-b401-de9534575271: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 09:41:38] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 09:41:38] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 10:13:19] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 10:13:20] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 10:13:48] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 10:13:49] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 10:14:24] INFO in backend.dependencies (dependencies.py:52): Authenticating user via JWT token.
+[2026-06-29 10:14:24] WARNING in backend.security (security.py:156): JWT token verification failed: The specified alg value is not allowed
+[2026-06-29 10:14:24] WARNING in backend.dependencies (dependencies.py:57): Token verification failed or token expired.
+[2026-06-29 10:16:48] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 10:16:49] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 10:16:49] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 10:16:50] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 404 Not Found"
+[2026-06-29 10:16:50] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user cab62411-45bf-4cb3-b401-de9534575271: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 10:16:50] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 10:16:50] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 10:24:09] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 10:24:10] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 10:28:14] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 10:28:15] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 10:31:48] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 10:31:49] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 10:57:34] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 10:57:34] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 10:58:55] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 10:58:55] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 10:59:21] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 10:59:21] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 10:59:50] INFO in backend.routes.auth (auth.py:198): Received login request for email: string
+[2026-06-29 10:59:50] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-29 10:59:50] ERROR in backend.routes.auth (auth.py:253): Login process failed for string: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-29 11:00:22] INFO in backend.routes.auth (auth.py:198): Received login request for email: string
+[2026-06-29 11:00:22] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-29 11:00:22] ERROR in backend.routes.auth (auth.py:253): Login process failed for string: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-29 11:00:24] INFO in backend.routes.auth (auth.py:198): Received login request for email: string
+[2026-06-29 11:00:25] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-29 11:00:25] ERROR in backend.routes.auth (auth.py:253): Login process failed for string: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-29 11:00:46] INFO in backend.routes.auth (auth.py:198): Received login request for email: string
+[2026-06-29 11:00:46] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-29 11:00:46] ERROR in backend.routes.auth (auth.py:253): Login process failed for string: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-29 11:00:48] INFO in backend.routes.auth (auth.py:198): Received login request for email: string
+[2026-06-29 11:00:48] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-29 11:00:48] ERROR in backend.routes.auth (auth.py:253): Login process failed for string: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-29 11:01:11] INFO in backend.routes.auth (auth.py:198): Received login request for email: string
+[2026-06-29 11:01:12] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-29 11:01:12] ERROR in backend.routes.auth (auth.py:253): Login process failed for string: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-29 11:02:09] INFO in backend.routes.auth (auth.py:198): Received login request for email: string
+[2026-06-29 11:02:09] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-29 11:02:09] ERROR in backend.routes.auth (auth.py:253): Login process failed for string: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-29 11:12:34] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 11:12:35] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 11:13:06] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 11:13:07] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 11:16:28] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 11:16:29] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 11:16:29] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 11:16:29] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 404 Not Found"
+[2026-06-29 11:16:29] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user cab62411-45bf-4cb3-b401-de9534575271: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 11:16:29] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 11:16:29] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.

@@ -1,14 +1,15 @@
 import os
 import shutil
-from fastapi import FastAPI, HTTPException, UploadFile, File
+from fastapi import FastAPI, HTTPException, UploadFile, File, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import requests
 
+from backend.config import settings
 from backend.imaging_service import process_ct_scan
-from backend.supabase_client import supabase
+from backend.database import get_supabase
 
 app = FastAPI(
     title="MedAI CT Scan API",
@@ -18,9 +19,34 @@ app = FastAPI(
 
 from backend.routes.auth import router as auth_router
 from backend.routes.scans import router as scans_router
+from backend.routes.admin import router as admin_router
+from backend.routes.reports import router as reports_router
 
 app.include_router(auth_router, prefix="/api")
 app.include_router(scans_router, prefix="/api")
+app.include_router(admin_router, prefix="/api")
+app.include_router(reports_router, prefix="/api")
+
+@app.get("/api/debug/headers", tags=["debug"])
+async def debug_headers(request: Request):
+    """
+    TEMPORARY DIAGNOSTIC ENDPOINT (Do not use in production).
+    
+    Returns all incoming request headers, specifically highlighting:
+    - Authorization
+    - User-Agent
+    - Host
+    
+    This endpoint is public, unprotected, and will be removed after testing.
+    """
+    headers_dict = dict(request.headers)
+    return {
+        "message": "TEMPORARY DIAGNOSTIC ENDPOINT - WILL BE REMOVED",
+        "Authorization": headers_dict.get("authorization"),
+        "User-Agent": headers_dict.get("user-agent"),
+        "Host": headers_dict.get("host"),
+        "all_headers": headers_dict
+    }
 
 app.add_middleware(
     CORSMiddleware,
@@ -30,8 +56,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-UPLOAD_DIR = "data/uploads"
-os.makedirs(UPLOAD_DIR, exist_ok=True)
+# Upload directory is managed via settings.UPLOAD_FOLDER
 
 
 class AnalyzeRequest(BaseModel):
@@ -40,13 +65,13 @@ class AnalyzeRequest(BaseModel):
     user_id: str
 
 @app.post("/analyze/")
-def analyze_scan_api(req: AnalyzeRequest):
+def analyze_scan_api(req: AnalyzeRequest, supabase = Depends(get_supabase)):
     try:
         # Download the file
         local_filename = req.file_url.split("/")[-1]
         # In case the URL query string is attached, split by '?' 
         local_filename = local_filename.split("?")[0]
-        file_path = os.path.join(UPLOAD_DIR, local_filename)
+        file_path = os.path.join(settings.UPLOAD_FOLDER, local_filename)
 
         response = requests.get(req.file_url)
         response.raise_for_status()
@@ -182,11 +207,11 @@ def ai_chat(req: AIChatRequest):
 
 
 @app.post("/predict/")
-async def predict_scan(file: UploadFile = File(...)):
+async def predict_scan(file: UploadFile = File(...), supabase = Depends(get_supabase)):
     try:
 
         # Save uploaded file
-        file_path = os.path.join(UPLOAD_DIR, file.filename)
+        file_path = os.path.join(settings.UPLOAD_FOLDER, file.filename)
 
         with open(file_path, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
