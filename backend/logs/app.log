@@ -498,3 +498,70 @@ supabase_auth.errors.AuthApiError: Invalid login credentials
 [2026-06-29 11:16:29] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user cab62411-45bf-4cb3-b401-de9534575271: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
 [2026-06-29 11:16:29] INFO in backend.security (security.py:128): JWT access token created successfully.
 [2026-06-29 11:16:29] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 11:26:43] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 11:26:44] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 11:27:12] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 11:27:13] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 13:41:39] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 13:41:40] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 13:42:12] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 13:42:13] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 13:47:56] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 13:47:57] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 13:52:18] INFO in backend.routes.auth (auth.py:87): Received signup request for email: test_bcd7a1fe@example.com
+[2026-06-29 13:52:18] INFO in backend.security (security.py:50): Hashing password using bcrypt.
+[2026-06-29 13:52:19] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+[2026-06-29 13:52:19] INFO in backend.routes.auth (auth.py:115): User successfully registered in Supabase Auth. ID: 98e3d131-9f7b-4ffa-8a05-f408477c6296
+[2026-06-29 13:52:20] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles "HTTP/2 404 Not Found"
+[2026-06-29 13:52:20] WARNING in backend.routes.auth (auth.py:128): Could not create profile record in 'profiles' table: {'message': "Could not find the table 'public.profiles' in the schema cache", 'code': 'PGRST205', 'hint': None, 'details': None}
+[2026-06-29 13:52:20] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles "HTTP/2 404 Not Found"
+[2026-06-29 13:52:20] WARNING in backend.routes.auth (auth.py:138): Could not assign default role in 'user_roles' table: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 13:52:20] INFO in backend.routes.auth (auth.py:198): Received login request for email: test_bcd7a1fe@example.com
+[2026-06-29 13:52:20] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 13:52:21] INFO in backend.security (security.py:73): Password verification succeeded.
+[2026-06-29 13:52:21] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.98e3d131-9f7b-4ffa-8a05-f408477c6296 "HTTP/2 404 Not Found"
+[2026-06-29 13:52:21] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user 98e3d131-9f7b-4ffa-8a05-f408477c6296: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 13:52:21] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 13:52:21] INFO in backend.routes.auth (auth.py:247): Successful login for user: test_bcd7a1fe@example.com. Token generated.
+[2026-06-29 13:54:21] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 13:54:21] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 13:57:53] INFO in backend.routes.auth (auth.py:87): Received signup request for email: verify_b9964b10@example.com
+[2026-06-29 13:57:53] INFO in backend.security (security.py:50): Hashing password using bcrypt.
+[2026-06-29 13:57:54] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+[2026-06-29 13:57:54] INFO in backend.routes.auth (auth.py:115): User successfully registered in Supabase Auth. ID: 4cb90d18-d75c-4c25-842e-428126b503c1
+[2026-06-29 13:57:54] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles "HTTP/2 404 Not Found"
+[2026-06-29 13:57:54] WARNING in backend.routes.auth (auth.py:128): Could not create profile record in 'profiles' table: {'message': "Could not find the table 'public.profiles' in the schema cache", 'code': 'PGRST205', 'hint': None, 'details': None}
+[2026-06-29 13:57:54] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles "HTTP/2 404 Not Found"
+[2026-06-29 13:57:54] WARNING in backend.routes.auth (auth.py:138): Could not assign default role in 'user_roles' table: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 13:57:54] INFO in backend.routes.auth (auth.py:198): Received login request for email: verify_b9964b10@example.com
+[2026-06-29 13:57:55] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 13:57:55] INFO in backend.security (security.py:73): Password verification succeeded.
+[2026-06-29 13:57:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.4cb90d18-d75c-4c25-842e-428126b503c1 "HTTP/2 404 Not Found"
+[2026-06-29 13:57:55] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user 4cb90d18-d75c-4c25-842e-428126b503c1: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 13:57:55] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 13:57:55] INFO in backend.routes.auth (auth.py:247): Successful login for user: verify_b9964b10@example.com. Token generated.
+[2026-06-29 13:57:55] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-29 13:57:55] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-29 13:57:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.4cb90d18-d75c-4c25-842e-428126b503c1 "HTTP/2 404 Not Found"
+[2026-06-29 13:57:55] ERROR in backend.dependencies (dependencies.py:109): Failed to retrieve user profile from database: {'message': "Could not find the table 'public.profiles' in the schema cache", 'code': 'PGRST205', 'hint': None, 'details': None}
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/dependencies.py", line 93, in get_current_user
+    profile_resp = supabase_client.table("profiles").select("*").eq("id", user_id).maybe_single().execute()
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/postgrest/_sync/request_builder.py", line 182, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': "Could not find the table 'public.profiles' in the schema cache", 'code': 'PGRST205', 'hint': None, 'details': None}
+[2026-06-29 13:59:49] INFO in backend.routes.auth (auth.py:87): Received signup request for email: verify_3c744870@example.com
+[2026-06-29 13:59:49] INFO in backend.security (security.py:50): Hashing password using bcrypt.
+[2026-06-29 13:59:50] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+[2026-06-29 13:59:50] INFO in backend.routes.auth (auth.py:115): User successfully registered in Supabase Auth. ID: ab696f89-5bbd-4c16-a713-3569105470d1
+[2026-06-29 13:59:50] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles "HTTP/2 404 Not Found"
+[2026-06-29 13:59:50] WARNING in backend.routes.auth (auth.py:128): Could not create profile record in 'profiles' table: {'message': "Could not find the table 'public.profiles' in the schema cache", 'code': 'PGRST205', 'hint': None, 'details': None}
+[2026-06-29 13:59:51] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles "HTTP/2 404 Not Found"
+[2026-06-29 13:59:51] WARNING in backend.routes.auth (auth.py:138): Could not assign default role in 'user_roles' table: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 13:59:51] INFO in backend.routes.auth (auth.py:198): Received login request for email: verify_3c744870@example.com
+[2026-06-29 13:59:51] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 13:59:51] INFO in backend.security (security.py:73): Password verification succeeded.
+[2026-06-29 13:59:51] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.ab696f89-5bbd-4c16-a713-3569105470d1 "HTTP/2 404 Not Found"
+[2026-06-29 13:59:51] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user ab696f89-5bbd-4c16-a713-3569105470d1: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
+[2026-06-29 13:59:51] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 13:59:51] INFO in backend.routes.auth (auth.py:247): Successful login for user: verify_3c744870@example.com. Token generated.
