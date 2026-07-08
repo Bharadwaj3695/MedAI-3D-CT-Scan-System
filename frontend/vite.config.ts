@@ -13,9 +13,8 @@ export default defineConfig(({ mode }) => ({
     },
     proxy: {
       // All /api/* requests are forwarded to the FastAPI backend.
-      // The /api prefix is stripped before forwarding.
       "/api": {
-        target: "http://localhost:8000",
+        target: process.env.VITE_API_URL || "http://localhost:8000",
         changeOrigin: true,
       },
     },

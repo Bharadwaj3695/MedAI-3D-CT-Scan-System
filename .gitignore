@@ -1,5 +1,49 @@
-venv/
-.venv/
+# Python
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.env/
+.venv/
+
+# Environment Variables
 .env
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Python Cache
+.pytest_cache/
+.mypy_cache/
+
+# Uploads
+uploads/
+outputs/
+
+# Model Files
+models/*.pth
+models/*.pt
+
+# Logs
+*.log
+
+# Build
+dist/
+build/
+
+# Node
+node_modules/
+
+# SQLite
+*.db
+
+# Medical Data Files (large datasets)
 data/

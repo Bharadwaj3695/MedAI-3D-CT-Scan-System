@@ -155,78 +155,20 @@ class AIChatRequest(BaseModel):
     message: str
     context: str = ""
 
+@app.post("/api/ai-chat/")
 @app.post("/ai-chat/")
 def ai_chat(req: AIChatRequest):
     """
-    Rule-based medical AI assistant endpoint.
-    Provides medically-relevant responses based on keywords in the user's message.
-    Replace the rule-based logic with an LLM API call (OpenAI, Gemini, etc.) by
-    setting OPENAI_API_KEY or GOOGLE_API_KEY in your .env file.
+    Medical AI assistant chatbot endpoint.
+    Routes requests to the centralized MedicalChatbotAgent.
     """
-    msg = req.message.lower()
-    context = req.context
-
-    # --- Optional: LLM via OpenAI ---
-    openai_key = os.getenv("OPENAI_API_KEY")
-    if openai_key:
-        try:
-            import openai
-            openai.api_key = openai_key
-            system_prompt = (
-                "You are a helpful medical AI assistant specializing in lung diseases and CT scan interpretation. "
-                "Always remind users to consult a certified radiologist for definitive diagnoses. "
-                f"Context from latest scan: {context}" if context else
-                "You are a helpful medical AI assistant specializing in lung diseases and CT scan interpretation."
-            )
-            response = openai.chat.completions.create(
-                model="gpt-3.5-turbo",
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": req.message}
-                ],
-                max_tokens=300
-            )
-            reply = response.choices[0].message.content
-            return {"reply": reply}
-        except Exception as e:
-            print(f"OpenAI error: {e}")
-
-    # --- Rule-based fallback ---
-    rules = [
-        (["malignant", "cancer", "tumor", "nodule"], 
-         "A malignant finding indicates potentially cancerous tissue. This should be confirmed with a biopsy and reviewed by an oncologist. Early detection is critical — please schedule a follow-up with your physician immediately."),
-        (["benign", "benign nodule", "no cancer"],
-         "A benign finding means the detected area is non-cancerous. However, periodic follow-up scans may still be recommended to monitor for any changes over time."),
-        (["confidence", "accuracy", "how sure", "certain"],
-         "The confidence score represents how certain the AI model is about its prediction (0–100%). A higher score means stronger evidence in the scan data. Always pair this with a clinical evaluation."),
-        (["findings", "what does it mean", "explain results"],
-         "The findings section summarizes key observations from the CT analysis. Each finding corresponds to specific patterns the AI detected in your scan. A radiologist can provide a full interpretation."),
-        (["recommendation", "next steps", "what should i do"],
-         "Common next steps include: scheduling a follow-up scan in 3–6 months, consulting a pulmonologist, and discussing risk factors with your physician. Treatment options depend on the severity and nature of the finding."),
-        (["lung nodule", "pulmonary nodule"],
-         "A pulmonary nodule is a small, rounded abnormality in the lung. Most are benign, but some may require monitoring or further evaluation depending on size, shape, and growth rate."),
-        (["dicom", "nifti", "file format", "ct scan format"],
-         "MedAI supports DICOM (.dcm) and NIfTI (.nii, .nii.gz) — standard medical imaging formats — as well as regular images like PNG and JPEG for quick analysis."),
-        (["grad-cam", "heatmap", "visualization"],
-         "The Grad-CAM heatmap highlights the regions of the CT scan that most influenced the AI decision. Red areas indicate high attention from the model — these are where the detected abnormality likely exists."),
-        (["risk", "high risk", "low risk", "moderate"],
-         "Risk level is derived from the AI prediction: high risk (likely malignant), moderate (uncertain, monitoring recommended), or low (likely benign). This is a preliminary assessment and should be verified clinically."),
-        (["hello", "hi", "hey", "help"],
-         "Hello! I'm the MedAI medical assistant. I can help you understand CT scan results, explain findings, or answer questions about lung conditions. What would you like to know?"),
-    ]
-
-    for keywords, response_text in rules:
-        if any(kw in msg for kw in keywords):
-            return {"reply": response_text}
-
-    # General fallback
-    return {
-        "reply": (
-            "Thank you for your question. For specific medical advice, please consult a licensed radiologist or physician. "
-            "I can help explain CT scan findings, medical terminology, or general information about lung conditions. "
-            "Could you provide more details about what you'd like to know?"
-        )
-    }
+    try:
+        from chatbot.chatbot_agent import MedicalChatbotAgent
+        agent = MedicalChatbotAgent()
+        reply = agent.get_response(req.message, req.context)
+        return {"reply": reply}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 

@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: medai-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - /app/.venv            # Exclude local virtual env from container
+      - /app/node_modules     # Exclude root node_modules
+      - /app/frontend         # Exclude frontend directory
+      - /app/uploads          # Mount uploads folder
+      - /app/outputs          # Mount outputs folder
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: medai-frontend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules     # Exclude container's node_modules from host overrides
+    environment:
+      - VITE_API_URL=http://backend:8000
+      - VITE_SUPABASE_URL=${SUPABASE_URL}
+      - VITE_SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+    depends_on:
+      - backend
+    restart: unless-stopped

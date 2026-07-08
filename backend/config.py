@@ -43,9 +43,9 @@ class Settings(BaseSettings):
     # Storage Configuration
     # ==========================================================================
     # File paths for local temporary uploads and generated outputs.
-    UPLOAD_FOLDER: str = str(BASE_DIR / "backend" / "uploads")
-    UPLOAD_DIR: str = str(BASE_DIR / "backend" / "uploads")
-    OUTPUT_FOLDER: str = str(BASE_DIR / "backend" / "outputs")
+    UPLOAD_FOLDER: str = str(BASE_DIR / "uploads")
+    UPLOAD_DIR: str = str(BASE_DIR / "uploads")
+    OUTPUT_FOLDER: str = str(BASE_DIR / "outputs")
 
     # ==========================================================================
     # AI Model Configuration
