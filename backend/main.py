@@ -21,7 +21,7 @@ app = FastAPI(
 )
 
 @app.get("/docs", include_in_schema=False)
-async def custom_swagger_ui_html(request: Request):
+def custom_swagger_ui_html(request: Request):
     root_path = request.scope.get("root_path", "").rstrip("/")
     openapi_url = root_path + (app.openapi_url or "/openapi.json")
     oauth2_redirect_url = app.swagger_ui_oauth2_redirect_url
@@ -38,7 +38,7 @@ async def custom_swagger_ui_html(request: Request):
     )
 
 @app.get("/docs/oauth2-redirect", include_in_schema=False)
-async def swagger_ui_redirect():
+def swagger_ui_redirect():
     return get_swagger_ui_oauth2_redirect_html()
 
 from backend.routes.auth import router as auth_router
@@ -52,7 +52,7 @@ app.include_router(admin_router, prefix="/api")
 app.include_router(reports_router, prefix="/api")
 
 @app.get("/api/debug/headers", tags=["debug"])
-async def debug_headers(request: Request):
+def debug_headers(request: Request):
     """
     TEMPORARY DIAGNOSTIC ENDPOINT (Do not use in production).
     
@@ -231,7 +231,7 @@ def ai_chat(req: AIChatRequest):
 
 
 @app.post("/predict/")
-async def predict_scan(file: UploadFile = File(...), supabase = Depends(get_supabase)):
+def predict_scan(file: UploadFile = File(...), supabase = Depends(get_supabase)):
     try:
 
         # Save uploaded file

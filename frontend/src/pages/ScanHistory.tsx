@@ -6,6 +6,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Brain, ArrowLeft, Eye } from 'lucide-react';
 import { useQuery } from '@tanstack/react-query';
 
+import { StatusBadge } from '@/components/ui/StatusBadge';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { LoadingSkeleton } from '@/components/ui/LoadingSkeleton';
+
 const ScanHistory = () => {
   const { user } = useAuth();
 
@@ -23,7 +27,7 @@ const ScanHistory = () => {
   });
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-12">
       <header className="sticky top-0 z-50 glass-card border-b">
         <div className="container mx-auto px-4 h-16 flex items-center gap-4">
           <Link to="/dashboard"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>
@@ -41,9 +45,15 @@ const ScanHistory = () => {
           </CardHeader>
           <CardContent>
             {isLoading ? (
-              <div className="text-center py-8 text-muted-foreground">Loading...</div>
+              <LoadingSkeleton variant="table" rows={5} />
             ) : scans.length === 0 ? (
-              <div className="text-center py-8 text-muted-foreground">No scans uploaded yet.</div>
+              <EmptyState
+                title="No scans uploaded yet"
+                description="Upload a 3D CT scan to begin. Your scan history will appear here."
+                icon={Brain}
+                actionLabel="Upload New Scan"
+                actionHref="/upload"
+              />
             ) : (
               <div className="space-y-3">
                 {scans.map((scan: any) => (
@@ -54,15 +64,13 @@ const ScanHistory = () => {
                       </div>
                       <div>
                         <p className="font-medium text-sm">{scan.file_name}</p>
-                        <p className="text-xs text-muted-foreground">
+                        <p className="text-xs text-muted-foreground mt-1">
                           {scan.scan_type.toUpperCase()} • {new Date(scan.created_at).toLocaleString()}
                         </p>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className={`text-xs px-2 py-1 rounded-full ${scan.status === 'completed' ? 'bg-accent/10 text-accent' : 'bg-muted text-muted-foreground'}`}>
-                        {scan.status}
-                      </span>
+                      <StatusBadge status={scan.status} />
                       <Link to={`/results/${scan.id}`}>
                         <Button size="sm" variant="outline"><Eye className="w-3 h-3 mr-1" /> View</Button>
                       </Link>

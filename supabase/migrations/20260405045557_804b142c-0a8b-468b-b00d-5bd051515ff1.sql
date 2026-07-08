@@ -41,18 +41,7 @@ $$;
 CREATE POLICY "Admins can view all profiles" ON public.profiles FOR SELECT USING (public.has_role(auth.uid(), 'admin'));
 
 -- Scans table
-CREATE TABLE public.scans (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE NOT NULL,
-  file_name TEXT NOT NULL,
-  file_path TEXT NOT NULL,
-  file_url TEXT,
-  scan_type TEXT NOT NULL DEFAULT '2d',
-  notes TEXT,
-  status TEXT NOT NULL DEFAULT 'pending',
-  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-  updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
-);
+
 ALTER TABLE public.scans ENABLE ROW LEVEL SECURITY;
 
 CREATE POLICY "Users can view own scans" ON public.scans FOR SELECT USING (auth.uid() = user_id);
@@ -68,6 +57,7 @@ CREATE TABLE public.analysis_results (
   result_data JSONB NOT NULL DEFAULT '{}',
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
 ALTER TABLE public.analysis_results ENABLE ROW LEVEL SECURITY;
 
 CREATE POLICY "Users can view own results" ON public.analysis_results FOR SELECT USING (auth.uid() = user_id);

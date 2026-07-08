@@ -109,7 +109,7 @@ class ReportService(BaseService):
         """
         report_id = str(uuid.uuid4())
         filename = f"report_{report_id}.html"
-        file_path = os.path.join(settings.OUTPUT_DIR, filename)
+        file_path = os.path.join(settings.OUTPUT_FOLDER, filename)
 
         # Save HTML report file
         self.logger.info(f"Saving HTML report to: {file_path}")

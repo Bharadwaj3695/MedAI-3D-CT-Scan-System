@@ -565,3 +565,1493 @@ postgrest.exceptions.APIError: {'message': "Could not find the table 'public.pro
 [2026-06-29 13:59:51] WARNING in backend.routes.auth (auth.py:237): Could not retrieve role for user ab696f89-5bbd-4c16-a713-3569105470d1: {'message': "Could not find the table 'public.user_roles' in the schema cache", 'code': 'PGRST205', 'hint': "Perhaps you meant the table 'public.scan_results'", 'details': None}
 [2026-06-29 13:59:51] INFO in backend.security (security.py:128): JWT access token created successfully.
 [2026-06-29 13:59:51] INFO in backend.routes.auth (auth.py:247): Successful login for user: verify_3c744870@example.com. Token generated.
+[2026-06-29 19:25:22] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 19:25:22] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 19:25:58] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-29 19:25:59] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-29 19:27:11] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 19:27:13] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 19:27:13] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 19:27:14] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-29 19:27:14] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 19:27:14] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 19:27:16] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 19:27:16] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 19:27:16] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 19:27:19] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-29 19:27:19] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 19:27:19] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 19:27:20] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 19:27:21] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 19:27:21] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 19:27:22] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-29 19:27:22] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 19:27:22] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 19:28:16] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-29 19:28:17] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-29 19:28:17] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-29 19:28:18] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-29 19:28:18] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-29 19:28:18] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-29 19:29:02] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-29 19:29:03] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-29 19:29:03] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-29 19:29:03] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-29 19:29:03] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-29 19:29:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-29 19:29:05] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-29 19:29:05] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-29 19:29:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-29 19:29:06] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-29 19:29:06] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-29 19:29:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:22:10] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 06:22:11] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 06:22:41] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 06:22:42] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 06:23:57] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 06:24:00] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 06:24:00] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 06:24:00] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 06:24:00] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 06:24:01] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 06:24:02] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:24:02] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 06:24:02] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 06:24:02] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 06:24:03] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 06:24:03] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 06:24:05] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:24:05] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 06:24:05] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 06:24:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:24:06] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 06:24:06] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 06:25:46] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 06:25:46] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 06:25:52] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:25:53] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 06:25:53] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 06:25:53] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:25:57] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 06:25:57] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 06:25:57] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:25:58] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 06:25:58] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 06:25:58] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:34:25] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 06:34:26] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 06:34:55] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 06:34:56] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 06:41:46] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 06:41:47] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 06:42:07] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 06:42:07] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 06:49:34] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 06:49:36] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 06:49:36] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 06:49:37] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:49:37] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 06:49:37] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 06:51:36] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 06:51:36] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 06:51:37] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:51:37] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 06:51:37] INFO in backend.routes.scans (scans.py:120): User cab62411-45bf-4cb3-b401-de9534575271 is uploading scan file: segmentation.nii.gz
+[2026-06-30 06:51:37] INFO in backend.services.base.StorageService (storage_service.py:20): Saving file locally: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/ef70fea03529471b831d70052cd33b27.nii.gz
+[2026-06-30 06:51:37] INFO in backend.services.base.StorageService (storage_service.py:39): Uploading /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/ef70fea03529471b831d70052cd33b27.nii.gz to Supabase bucket 'scans' path 'cab62411-45bf-4cb3-b401-de9534575271/7769f36a-f1c4-4a8a-b8cd-b1355e0e5c7b.gz'
+[2026-06-30 06:51:38] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/storage/v1/object/scans/cab62411-45bf-4cb3-b401-de9534575271/7769f36a-f1c4-4a8a-b8cd-b1355e0e5c7b.gz "HTTP/2 200 OK"
+[2026-06-30 06:51:38] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans "HTTP/2 201 Created"
+[2026-06-30 06:51:38] INFO in backend.routes.scans (scans.py:175): Scan record created successfully. Scan ID: f9a6bc91-ef91-4169-a2c1-39e3b2a48d52
+[2026-06-30 06:51:38] INFO in backend.routes.scans (scans.py:179): Triggering automatic AI inference for scan ID: f9a6bc91-ef91-4169-a2c1-39e3b2a48d52
+[2026-06-30 06:51:38] INFO in backend.services.base.AIService (ai_service.py:29): Running AI inference on file: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/ef70fea03529471b831d70052cd33b27.nii.gz
+[2026-06-30 06:51:50] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results "HTTP/2 201 Created"
+[2026-06-30 06:51:50] INFO in httpx (_client.py:1025): HTTP Request: PATCH https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?id=eq.f9a6bc91-ef91-4169-a2c1-39e3b2a48d52 "HTTP/2 200 OK"
+[2026-06-30 06:51:50] INFO in backend.routes.scans (scans.py:207): Automatic AI inference completed for scan ID: f9a6bc91-ef91-4169-a2c1-39e3b2a48d52
+[2026-06-30 06:52:15] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 06:52:15] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 06:52:15] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:52:15] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 06:52:15] INFO in backend.routes.scans (scans.py:120): User cab62411-45bf-4cb3-b401-de9534575271 is uploading scan file: segmentation.nii.gz
+[2026-06-30 06:52:15] INFO in backend.services.base.StorageService (storage_service.py:20): Saving file locally: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/0e83a132447f4413955685962412d8d9.nii.gz
+[2026-06-30 06:52:15] INFO in backend.services.base.StorageService (storage_service.py:39): Uploading /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/0e83a132447f4413955685962412d8d9.nii.gz to Supabase bucket 'scans' path 'cab62411-45bf-4cb3-b401-de9534575271/455e3366-d0fe-42c5-9c8b-ed02f966ba0f.gz'
+[2026-06-30 06:52:16] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/storage/v1/object/scans/cab62411-45bf-4cb3-b401-de9534575271/455e3366-d0fe-42c5-9c8b-ed02f966ba0f.gz "HTTP/2 200 OK"
+[2026-06-30 06:52:17] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans "HTTP/2 201 Created"
+[2026-06-30 06:52:17] INFO in backend.routes.scans (scans.py:175): Scan record created successfully. Scan ID: f511fc95-c2b4-4639-a075-c5e5f5451ac6
+[2026-06-30 06:52:17] INFO in backend.routes.scans (scans.py:179): Triggering automatic AI inference for scan ID: f511fc95-c2b4-4639-a075-c5e5f5451ac6
+[2026-06-30 06:52:17] INFO in backend.services.base.AIService (ai_service.py:29): Running AI inference on file: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/0e83a132447f4413955685962412d8d9.nii.gz
+[2026-06-30 06:52:23] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results "HTTP/2 201 Created"
+[2026-06-30 06:52:23] INFO in httpx (_client.py:1025): HTTP Request: PATCH https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?id=eq.f511fc95-c2b4-4639-a075-c5e5f5451ac6 "HTTP/2 200 OK"
+[2026-06-30 06:52:23] INFO in backend.routes.scans (scans.py:207): Automatic AI inference completed for scan ID: f511fc95-c2b4-4639-a075-c5e5f5451ac6
+[2026-06-30 06:52:51] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 06:52:51] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 06:52:51] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 06:52:51] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 06:52:51] INFO in backend.routes.scans (scans.py:120): User cab62411-45bf-4cb3-b401-de9534575271 is uploading scan file: segmentation.nii.gz
+[2026-06-30 06:52:51] INFO in backend.services.base.StorageService (storage_service.py:20): Saving file locally: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/7e6741eb3973406daefd33b18dd3510b.nii.gz
+[2026-06-30 06:52:52] INFO in backend.services.base.StorageService (storage_service.py:39): Uploading /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/7e6741eb3973406daefd33b18dd3510b.nii.gz to Supabase bucket 'scans' path 'cab62411-45bf-4cb3-b401-de9534575271/0e1b70b2-2163-4988-a96e-2b29e7fbaac8.gz'
+[2026-06-30 06:52:52] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/storage/v1/object/scans/cab62411-45bf-4cb3-b401-de9534575271/0e1b70b2-2163-4988-a96e-2b29e7fbaac8.gz "HTTP/2 200 OK"
+[2026-06-30 06:52:52] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans "HTTP/2 201 Created"
+[2026-06-30 06:52:52] INFO in backend.routes.scans (scans.py:175): Scan record created successfully. Scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 06:52:52] INFO in backend.routes.scans (scans.py:179): Triggering automatic AI inference for scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 06:52:52] INFO in backend.services.base.AIService (ai_service.py:29): Running AI inference on file: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/7e6741eb3973406daefd33b18dd3510b.nii.gz
+[2026-06-30 06:52:55] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results "HTTP/2 201 Created"
+[2026-06-30 06:52:56] INFO in httpx (_client.py:1025): HTTP Request: PATCH https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a "HTTP/2 200 OK"
+[2026-06-30 06:52:56] INFO in backend.routes.scans (scans.py:207): Automatic AI inference completed for scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 07:50:49] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 07:50:51] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 07:50:51] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 07:50:52] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 07:50:52] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 07:50:52] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 07:50:52] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 07:50:52] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 07:50:52] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 07:50:53] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 07:50:53] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 07:50:53] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 07:51:25] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 07:51:25] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 07:51:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 07:51:28] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 07:51:28] INFO in backend.routes.reports (reports.py:53): Generating report (legacy) for scan ID: string
+[2026-06-30 07:51:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.string "HTTP/2 400 Bad Request"
+[2026-06-30 07:51:38] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 07:51:38] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 07:51:39] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 07:51:39] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 07:51:39] INFO in backend.routes.reports (reports.py:100): Generating report for scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 07:51:40] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 07:51:40] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a "HTTP/2 200 OK"
+[2026-06-30 07:51:43] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 07:51:43] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 07:51:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 07:51:43] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 07:51:43] INFO in backend.routes.reports (reports.py:100): Generating report for scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 07:51:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 07:51:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a "HTTP/2 200 OK"
+[2026-06-30 07:57:08] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 07:57:09] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 07:58:02] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 07:58:03] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 07:59:42] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 07:59:43] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 07:59:43] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 07:59:45] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 07:59:45] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 07:59:45] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 07:59:56] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 07:59:56] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 07:59:56] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 07:59:56] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 07:59:56] INFO in backend.routes.reports (reports.py:53): Generating report (legacy) for scan ID: string
+[2026-06-30 07:59:56] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.string "HTTP/2 400 Bad Request"
+[2026-06-30 08:00:07] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 08:00:07] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 08:00:08] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:00:08] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 08:00:08] INFO in backend.routes.reports (reports.py:100): Generating report for scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 08:00:09] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:00:09] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a "HTTP/2 200 OK"
+[2026-06-30 08:15:42] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 08:15:43] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 08:20:41] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 08:20:42] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 08:21:29] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 08:21:30] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 08:23:57] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 08:23:58] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 08:23:58] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 08:24:00] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:24:00] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 08:24:00] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 08:24:09] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 08:24:09] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 08:24:10] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:24:10] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 08:24:10] INFO in backend.routes.reports (reports.py:100): Generating report for scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 08:24:10] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:24:10] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a "HTTP/2 200 OK"
+[2026-06-30 08:24:10] INFO in backend.services.base.ReportService (report_service.py:115): Saving HTML report to: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/outputs/report_55a3a6bd-aa70-4e8e-9018-51a565c65414.html
+[2026-06-30 08:24:10] INFO in backend.services.base.ReportService (report_service.py:135): Saving report metadata to database for report_id: 55a3a6bd-aa70-4e8e-9018-51a565c65414
+[2026-06-30 08:24:11] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports "HTTP/2 201 Created"
+[2026-06-30 08:25:47] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 08:25:47] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 08:25:48] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:25:48] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 08:25:48] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=10, offset=0)
+[2026-06-30 08:25:48] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=10 "HTTP/2 200 OK"
+[2026-06-30 08:26:12] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 08:26:12] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 08:26:12] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:26:12] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 08:26:12] INFO in backend.routes.reports (reports.py:207): Fetching report/scan details for ID: 55a3a6bd-aa70-4e8e-9018-51a565c65414
+[2026-06-30 08:26:12] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.55a3a6bd-aa70-4e8e-9018-51a565c65414 "HTTP/2 200 OK"
+[2026-06-30 08:26:15] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 08:26:15] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 08:26:15] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:26:15] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 08:26:15] INFO in backend.routes.reports (reports.py:207): Fetching report/scan details for ID: 55a3a6bd-aa70-4e8e-9018-51a565c65414
+[2026-06-30 08:26:16] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.55a3a6bd-aa70-4e8e-9018-51a565c65414 "HTTP/2 200 OK"
+[2026-06-30 08:26:33] INFO in backend.routes.reports (reports.py:284): Downloading HTML report for report ID: 55a3a6bd-aa70-4e8e-9018-51a565c65414
+[2026-06-30 08:26:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.55a3a6bd-aa70-4e8e-9018-51a565c65414 "HTTP/2 200 OK"
+[2026-06-30 08:32:14] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 08:32:15] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 08:32:15] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 08:32:16] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 08:32:16] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:32:16] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 08:32:16] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 08:32:16] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 08:32:16] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 08:32:18] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:32:18] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 08:32:18] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 08:32:27] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 08:32:27] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 08:32:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:32:27] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 08:32:27] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=10, offset=0)
+[2026-06-30 08:32:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=10 "HTTP/2 200 OK"
+[2026-06-30 08:33:00] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 08:33:00] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 08:33:01] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:33:01] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 08:33:01] INFO in backend.routes.reports (reports.py:207): Fetching report/scan details for ID: 55a3a6bd-aa70-4e8e-9018-51a565c65414
+[2026-06-30 08:33:02] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.55a3a6bd-aa70-4e8e-9018-51a565c65414 "HTTP/2 200 OK"
+[2026-06-30 08:33:03] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 08:33:03] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 08:33:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 08:33:04] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 08:33:04] INFO in backend.routes.reports (reports.py:207): Fetching report/scan details for ID: 55a3a6bd-aa70-4e8e-9018-51a565c65414
+[2026-06-30 08:33:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.55a3a6bd-aa70-4e8e-9018-51a565c65414 "HTTP/2 200 OK"
+[2026-06-30 10:10:55] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 10:10:55] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 10:11:27] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 10:11:28] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 10:35:04] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 10:35:06] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 10:40:46] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 10:40:47] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 10:40:47] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 10:40:47] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 10:40:47] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 10:40:47] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 10:40:48] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:40:48] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:40:48] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 10:40:48] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 10:40:48] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 10:40:48] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 10:40:57] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 10:40:57] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 10:40:58] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:40:58] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 10:40:58] INFO in backend.routes.reports (reports.py:100): Generating report for scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 10:40:58] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:40:58] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a "HTTP/2 200 OK"
+[2026-06-30 10:40:58] INFO in backend.services.base.ReportService (report_service.py:115): Saving HTML report to: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/outputs/report_750bffa0-574a-4401-947d-792eed3e927f.html
+[2026-06-30 10:40:58] INFO in backend.services.base.ReportService (report_service.py:135): Saving report metadata to database for report_id: 750bffa0-574a-4401-947d-792eed3e927f
+[2026-06-30 10:40:59] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports "HTTP/2 201 Created"
+[2026-06-30 10:45:31] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 10:45:31] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 10:45:32] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:45:32] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 10:45:32] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=10, offset=0)
+[2026-06-30 10:45:32] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=10 "HTTP/2 200 OK"
+[2026-06-30 10:45:34] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 10:45:34] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 10:45:34] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:45:34] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 10:45:34] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=10, offset=0)
+[2026-06-30 10:45:34] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=10 "HTTP/2 200 OK"
+[2026-06-30 10:46:14] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 10:46:14] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 10:46:14] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:46:14] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 10:46:14] INFO in backend.routes.reports (reports.py:207): Fetching report/scan details for ID: 062a627e-1cf1-4761-9e65-5ae204b6b1ab
+[2026-06-30 10:46:14] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.062a627e-1cf1-4761-9e65-5ae204b6b1ab "HTTP/2 200 OK"
+[2026-06-30 10:46:14] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.062a627e-1cf1-4761-9e65-5ae204b6b1ab&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:46:16] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 10:46:16] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 10:46:16] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:46:16] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 10:46:16] INFO in backend.routes.reports (reports.py:207): Fetching report/scan details for ID: 062a627e-1cf1-4761-9e65-5ae204b6b1ab
+[2026-06-30 10:46:16] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.062a627e-1cf1-4761-9e65-5ae204b6b1ab "HTTP/2 200 OK"
+[2026-06-30 10:46:16] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.062a627e-1cf1-4761-9e65-5ae204b6b1ab&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:46:54] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 10:46:54] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 10:46:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:46:55] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 10:46:55] INFO in backend.routes.reports (reports.py:207): Fetching report/scan details for ID: 5819585d-06e2-4d4d-9140-17f3b7ce92ac
+[2026-06-30 10:46:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.5819585d-06e2-4d4d-9140-17f3b7ce92ac "HTTP/2 200 OK"
+[2026-06-30 10:46:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.5819585d-06e2-4d4d-9140-17f3b7ce92ac&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:51:52] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 10:51:52] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 10:52:11] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:52:11] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 10:52:11] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 10:52:15] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 10:53:15] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 10:53:15] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 10:53:32] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 10:53:32] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 10:53:32] INFO in backend.routes.reports (reports.py:207): Fetching report/scan details for ID: 750bffa0-574a-4401-947d-792eed3e927f
+[2026-06-30 10:53:35] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.750bffa0-574a-4401-947d-792eed3e927f "HTTP/2 200 OK"
+[2026-06-30 10:55:30] INFO in backend.routes.reports (reports.py:284): Downloading HTML report for report ID: 55a3a6bd-aa70-4e8e-9018-51a565c65414
+[2026-06-30 10:55:31] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.55a3a6bd-aa70-4e8e-9018-51a565c65414 "HTTP/2 200 OK"
+[2026-06-30 10:55:33] INFO in backend.routes.reports (reports.py:284): Downloading HTML report for report ID: 55a3a6bd-aa70-4e8e-9018-51a565c65414
+[2026-06-30 10:55:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.55a3a6bd-aa70-4e8e-9018-51a565c65414 "HTTP/2 200 OK"
+[2026-06-30 11:38:51] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 11:38:54] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 11:38:54] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 11:38:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 11:38:55] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 11:38:55] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 11:39:50] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 11:39:50] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 11:39:51] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 11:39:51] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 11:39:51] INFO in backend.routes.scans (scans.py:482): Fetching details for scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 11:39:51] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 11:39:51] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a "HTTP/2 200 OK"
+[2026-06-30 12:54:45] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=refresh_token "HTTP/2 200 OK"
+[2026-06-30 12:54:45] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=refresh_token "HTTP/2 200 OK"
+[2026-06-30 16:07:12] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 16:07:13] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 16:07:41] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 16:07:42] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 16:24:28] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-06-30 16:24:29] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-06-30 17:42:20] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:42:22] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 17:42:22] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 17:42:25] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:42:25] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 17:42:25] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 17:42:31] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:42:32] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 17:42:32] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 17:42:35] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:42:35] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 17:42:35] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 17:42:37] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:42:39] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 17:42:39] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 17:42:41] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:42:41] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 17:42:41] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 17:48:39] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:48:43] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-30 17:48:43] ERROR in backend.routes.auth (auth.py:253): Login process failed for bharadwaj.mbjj99@gmail.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-30 17:49:12] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:49:12] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-30 17:49:12] ERROR in backend.routes.auth (auth.py:253): Login process failed for bharadwaj.mbjj99@gmail.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-30 17:49:49] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:49:49] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 17:49:49] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 17:49:50] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:49:50] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 17:49:50] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 17:49:50] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:49:50] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:49:51] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:49:51] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:49:51] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:49:51] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:49:51] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:49:51] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:49:51] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:49:51] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:49:51] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:49:52] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:49:52] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:49:52] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:49:52] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:49:52] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:49:52] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:49:52] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:49:52] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 17:49:52] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:49:52] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:49:52] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:49:52] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:49:52] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:49:52] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:49:52] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:49:52] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:49:52] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:49:52] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 17:49:52] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:49:53] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:49:53] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:49:53] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:49:53] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:49:53] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:49:53] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:49:53] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:49:54] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:50:07] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:50:08] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-30 17:50:08] ERROR in backend.routes.auth (auth.py:253): Login process failed for bharadwaj.mbjj99@gmail.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-30 17:50:26] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:50:26] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:50:26] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:50:26] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:50:26] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:50:26] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:50:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:50:27] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:50:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:50:27] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 17:50:27] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:50:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:50:27] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:50:27] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:50:27] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:50:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:50:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:50:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 17:51:03] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:51:04] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 17:51:04] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 17:51:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:04] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 17:51:04] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 17:51:04] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:04] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:05] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:05] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:05] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:51:05] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:05] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:05] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:05] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:05] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:05] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:05] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:05] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:05] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:05] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:05] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:05] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:05] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:05] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:05] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:51:05] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:05] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:51:05] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:05] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:05] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:51:05] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 17:51:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:51:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:51:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 17:51:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:51:06] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:06] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:06] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:06] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:51:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:06] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:51:06] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:06] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:07] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:07] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:07] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:51:07] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:07] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:51:15] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:15] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:15] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:15] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:15] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:15] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:15] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:15] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:15] INFO in backend.routes.scans (scans.py:482): Fetching details for scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 17:51:15] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:51:16] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:51:16] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:16] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a "HTTP/2 200 OK"
+[2026-06-30 17:51:54] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:54] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:54] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:54] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:54] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:51:54] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:54] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:54] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:51:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:55] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:55] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 17:51:55] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:55] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:51:55] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:55] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:51:55] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:51:55] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:51:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:51:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:51:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:51:55] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 17:51:56] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:52:01] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:01] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:02] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:02] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:02] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:52:02] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:52:04] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:04] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:04] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:04] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:04] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:04] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:04] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:04] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:04] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:04] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:52:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:04] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:04] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 17:52:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:04] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:04] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:52:04] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:52:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:52:04] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:52:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 17:52:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:04] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:52:20] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:20] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:21] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:21] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:21] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:52:21] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:52:21] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:21] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:21] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:21] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:21] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:21] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:21] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:21] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:21] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:21] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:21] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:21] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 17:52:21] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:21] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:21] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:21] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:52:21] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:21] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:21] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:52:21] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:52:22] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:52:22] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:52:22] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:22] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 17:52:22] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:52:27] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:27] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:27] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:27] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:28] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:28] INFO in backend.routes.scans (scans.py:482): Fetching details for scan ID: 95e8d854-1ac9-481b-afcf-bd8132d6c25a
+[2026-06-30 17:52:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:28] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:28] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:52:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:52:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.95e8d854-1ac9-481b-afcf-bd8132d6c25a "HTTP/2 200 OK"
+[2026-06-30 17:52:37] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:37] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:37] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:37] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:37] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:52:37] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:46] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:52:46] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:52:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:47] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:52:47] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:52:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:52:58] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:52:58] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-30 17:52:58] ERROR in backend.routes.auth (auth.py:253): Login process failed for bharadwaj.mbjj99@gmail.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-30 17:53:11] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:53:11] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-30 17:53:11] ERROR in backend.routes.auth (auth.py:253): Login process failed for bharadwaj.mbjj99@gmail.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-30 17:53:43] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:53:43] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-30 17:53:43] ERROR in backend.routes.auth (auth.py:253): Login process failed for bharadwaj.mbjj99@gmail.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-30 17:53:44] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:53:45] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-30 17:53:45] ERROR in backend.routes.auth (auth.py:253): Login process failed for bharadwaj.mbjj99@gmail.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-30 17:54:01] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:54:01] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:54:02] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:02] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:54:02] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:54:03] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:41] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:54:42] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 17:54:42] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 17:54:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:43] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 17:54:43] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 17:54:43] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:54:43] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:54:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:43] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:54:43] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:54:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:44] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:54:44] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:54:44] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:54:44] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:54:44] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:54:44] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:54:44] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:54:44] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:54:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:44] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:54:44] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:54:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:44] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:54:44] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:54:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:44] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:54:44] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:54:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:44] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:54:44] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 17:54:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:54:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:54:45] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:54:45] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 17:54:45] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:54:45] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:54:45] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:45] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:54:45] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:54:45] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:54:45] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:57:13] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:57:14] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 400 Bad Request"
+[2026-06-30 17:57:14] ERROR in backend.routes.auth (auth.py:253): Login process failed for bharadwaj.mbjj99@gmail.com: Invalid login credentials
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 202, in login
+    auth_res = supabase_client.auth.sign_in_with_password({
+        "email": email,
+        "password": password
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 309, in sign_in_with_password
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        query=QueryParams(grant_type="password"),
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: Invalid login credentials
+[2026-06-30 17:57:24] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:57:24] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 17:57:24] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 17:57:26] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:26] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 17:57:26] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 17:57:26] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:57:26] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:57:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:27] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:57:27] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:57:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:27] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:57:27] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:57:27] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:57:27] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:57:27] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:57:27] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:57:27] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:57:27] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:57:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:27] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:57:27] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:57:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:27] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:57:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:27] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 17:57:27] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:27] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:57:27] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:57:27] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:57:27] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:57:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:57:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:57:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 17:57:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:57:28] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:57:28] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:57:28] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:28] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:57:28] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:57:29] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:29] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:57:29] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:57:29] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:57:29] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:29] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:57:29] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:57:29] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:57:29] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:58:43] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:58:43] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:58:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:58:44] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:58:44] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:58:45] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:58:46] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:58:46] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:58:46] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:58:46] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:58:46] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:58:46] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:58:46] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:58:46] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:58:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:58:47] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:58:47] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 17:58:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:58:47] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:58:47] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:58:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:58:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:58:47] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:58:47] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:58:47] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:58:47] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:58:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:58:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:58:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:58:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 17:58:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:59:08] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:59:08] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:59:09] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:09] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:59:09] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:59:09] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:16] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 17:59:17] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 17:59:17] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 17:59:18] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:18] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 17:59:18] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 17:59:18] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:59:18] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:59:18] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:18] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:59:18] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:59:18] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:19] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:59:19] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:59:19] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:59:19] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:59:19] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:59:19] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:59:19] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:59:19] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:59:19] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:19] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:59:19] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:19] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:59:19] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:19] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:59:19] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:59:19] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 17:59:19] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 17:59:19] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:19] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:19] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:59:19] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 17:59:19] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:59:19] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 17:59:19] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:59:19] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:59:19] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 17:59:19] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:59:20] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:20] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:59:20] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:59:20] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:20] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:59:20] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:59:20] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:59:20] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:20] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:59:20] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:59:20] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:21] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:59:21] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 17:59:21] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 17:59:21] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:21] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 17:59:21] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 17:59:21] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 17:59:22] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 17:59:25] INFO in backend.routes.auth (auth.py:315): Stateless logout endpoint triggered.
+[2026-06-30 18:00:13] INFO in backend.routes.auth (auth.py:87): Received signup request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 18:00:13] INFO in backend.security (security.py:50): Hashing password using bcrypt.
+[2026-06-30 18:00:14] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/signup "HTTP/2 422 Unprocessable Entity"
+[2026-06-30 18:00:14] ERROR in backend.routes.auth (auth.py:167): Signup failed for bharadwaj.mbjj99@gmail.com: User already registered
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/signup'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 96, in signup
+    auth_res = supabase_client.auth.sign_up({
+        "email": data.email,
+    ...<6 lines>...
+        }
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 249, in sign_up
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        redirect_to=redirect_to,
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: User already registered
+[2026-06-30 18:00:44] INFO in backend.routes.auth (auth.py:87): Received signup request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 18:00:44] INFO in backend.security (security.py:50): Hashing password using bcrypt.
+[2026-06-30 18:00:45] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/signup "HTTP/2 422 Unprocessable Entity"
+[2026-06-30 18:00:45] ERROR in backend.routes.auth (auth.py:167): Signup failed for bharadwaj.mbjj99@gmail.com: User already registered
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/signup'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 96, in signup
+    auth_res = supabase_client.auth.sign_up({
+        "email": data.email,
+    ...<6 lines>...
+        }
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 249, in sign_up
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        redirect_to=redirect_to,
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: User already registered
+[2026-06-30 18:00:55] INFO in backend.routes.auth (auth.py:87): Received signup request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 18:00:55] INFO in backend.security (security.py:50): Hashing password using bcrypt.
+[2026-06-30 18:00:56] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/signup "HTTP/2 422 Unprocessable Entity"
+[2026-06-30 18:00:56] ERROR in backend.routes.auth (auth.py:167): Signup failed for bharadwaj.mbjj99@gmail.com: User already registered
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/signup'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/routes/auth.py", line 96, in signup
+    auth_res = supabase_client.auth.sign_up({
+        "email": data.email,
+    ...<6 lines>...
+        }
+    })
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 249, in sign_up
+    response = self._request(
+        "POST",
+    ...<9 lines>...
+        redirect_to=redirect_to,
+    )
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: User already registered
+[2026-06-30 18:01:19] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-06-30 18:01:22] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-06-30 18:01:22] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-06-30 18:01:26] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:01:26] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-06-30 18:01:26] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-06-30 18:01:26] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:01:26] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:01:31] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:01:31] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:01:31] INFO in backend.routes.auth (auth.py:275): Fetching /me profile for user ID: cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:01:32] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:01:32] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:01:32] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:01:32] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:01:32] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:01:32] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:01:32] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:01:32] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:01:32] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:01:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:01:33] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:01:33] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:01:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:01:33] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:01:33] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:01:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:01:33] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:01:33] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 18:01:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:01:33] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:01:33] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 18:01:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 18:01:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:01:34] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 18:01:34] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 18:01:34] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 18:01:50] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:01:50] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:01:50] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:01:50] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:01:50] INFO in backend.routes.scans (scans.py:120): User cab62411-45bf-4cb3-b401-de9534575271 is uploading scan file: imaging.nii.gz
+[2026-06-30 18:01:50] INFO in backend.services.base.StorageService (storage_service.py:20): Saving file locally: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/8908bc4937d84e3fa5d1bb6f3ee1f23c.nii.gz
+[2026-06-30 18:01:50] INFO in backend.services.base.StorageService (storage_service.py:39): Uploading /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/8908bc4937d84e3fa5d1bb6f3ee1f23c.nii.gz to Supabase bucket 'scans' path 'cab62411-45bf-4cb3-b401-de9534575271/14b0a8c5-3863-427d-b4ea-d97d4120f345.gz'
+[2026-06-30 18:01:59] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/storage/v1/object/scans/cab62411-45bf-4cb3-b401-de9534575271/14b0a8c5-3863-427d-b4ea-d97d4120f345.gz "HTTP/2 200 OK"
+[2026-06-30 18:01:59] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans "HTTP/2 201 Created"
+[2026-06-30 18:01:59] INFO in backend.routes.scans (scans.py:175): Scan record created successfully. Scan ID: 398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a
+[2026-06-30 18:01:59] INFO in backend.routes.scans (scans.py:179): Triggering automatic AI inference for scan ID: 398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a
+[2026-06-30 18:01:59] INFO in backend.services.base.AIService (ai_service.py:29): Running AI inference on file: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/uploads/8908bc4937d84e3fa5d1bb6f3ee1f23c.nii.gz
+[2026-06-30 18:02:08] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results "HTTP/2 201 Created"
+[2026-06-30 18:02:08] INFO in httpx (_client.py:1025): HTTP Request: PATCH https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?id=eq.398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a "HTTP/2 200 OK"
+[2026-06-30 18:02:08] INFO in backend.routes.scans (scans.py:207): Automatic AI inference completed for scan ID: 398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a
+[2026-06-30 18:02:09] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:02:09] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:02:09] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:02:09] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:02:09] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:02:09] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:02:09] INFO in backend.routes.scans (scans.py:482): Fetching details for scan ID: 398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a
+[2026-06-30 18:02:09] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:02:09] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:02:09] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 18:02:09] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:02:09] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 18:02:10] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a "HTTP/2 200 OK"
+[2026-06-30 18:02:41] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:02:41] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:02:42] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:02:42] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:02:42] INFO in backend.routes.reports (reports.py:100): Generating report for scan ID: 398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a
+[2026-06-30 18:02:42] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:02:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a "HTTP/2 200 OK"
+[2026-06-30 18:02:43] INFO in backend.services.base.ReportService (report_service.py:115): Saving HTML report to: /mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/outputs/report_7ea57076-469f-4a1e-a7f2-8b4fdf4ce097.html
+[2026-06-30 18:02:43] INFO in backend.services.base.ReportService (report_service.py:135): Saving report metadata to database for report_id: 7ea57076-469f-4a1e-a7f2-8b4fdf4ce097
+[2026-06-30 18:02:43] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports "HTTP/2 201 Created"
+[2026-06-30 18:02:49] INFO in backend.routes.reports (reports.py:284): Downloading HTML report for report ID: 7ea57076-469f-4a1e-a7f2-8b4fdf4ce097
+[2026-06-30 18:02:49] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&id=eq.7ea57076-469f-4a1e-a7f2-8b4fdf4ce097 "HTTP/2 200 OK"
+[2026-06-30 18:04:42] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:04:42] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:04:42] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:04:42] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:04:42] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:04:42] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:04:42] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:04:42] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:04:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:04:43] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:04:43] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:04:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:04:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:04:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:04:43] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:04:43] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:04:43] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:04:43] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 18:04:43] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 18:04:43] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:04:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 18:04:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 18:04:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:04:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 18:04:43] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 18:04:44] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:04:44] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:04:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:04:44] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:04:44] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:04:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:04:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 18:05:34] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:05:34] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:05:34] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:05:34] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:05:35] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:05:35] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:05:35] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 18:05:35] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:05:35] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:05:35] INFO in backend.routes.scans (scans.py:482): Fetching details for scan ID: 398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a
+[2026-06-30 18:05:35] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 18:05:35] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&id=eq.398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:05:35] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/analysis_results?select=%2A&scan_id=eq.398bbe67-f6b4-4ea4-84bf-0c29a8c3b04a "HTTP/2 200 OK"
+[2026-06-30 18:05:47] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:05:47] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:05:47] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:05:47] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:05:47] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:05:47] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:05:47] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:05:47] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:05:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:05:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:05:47] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:05:47] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:05:47] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:05:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:05:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:05:47] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:05:47] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 18:05:47] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:05:47] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 18:05:47] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:05:48] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 18:05:48] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:05:48] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 18:05:48] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 18:05:48] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 18:06:32] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:06:32] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:06:32] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:06:32] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:06:32] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:06:32] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:06:32] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:06:32] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:06:32] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:06:32] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:06:32] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:06:32] INFO in backend.routes.scans (scans.py:325): Fetching scan history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=50, offset=0)
+[2026-06-30 18:06:32] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:06:32] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:06:32] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:06:32] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:06:32] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:06:32] INFO in backend.routes.reports (reports.py:160): Fetching reports history for user cab62411-45bf-4cb3-b401-de9534575271 (limit=100, offset=0)
+[2026-06-30 18:06:32] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:06:32] INFO in backend.routes.scans (scans.py:460): Fetching scan stats for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:06:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-06-30 18:06:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/reports?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=100 "HTTP/2 200 OK"
+[2026-06-30 18:06:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:06:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A%2Canalysis_results%28%2A%29&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc&offset=0&limit=50 "HTTP/2 200 OK"
+[2026-06-30 18:06:33] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&status=eq.completed "HTTP/2 200 OK"
+[2026-06-30 18:06:34] INFO in backend.dependencies (dependencies.py:70): Authenticating user via JWT token.
+[2026-06-30 18:06:34] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-06-30 18:06:35] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/profiles?select=%2A&id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-06-30 18:06:35] INFO in backend.dependencies (dependencies.py:103): User cab62411-45bf-4cb3-b401-de9534575271 authenticated successfully.
+[2026-06-30 18:06:35] INFO in backend.routes.scans (scans.py:443): Fetching all scans for user cab62411-45bf-4cb3-b401-de9534575271
+[2026-06-30 18:06:35] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/scans?select=%2A&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271&order=created_at.desc "HTTP/2 200 OK"
+[2026-07-06 18:05:08] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-07-06 18:05:08] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-07-06 18:05:38] INFO in backend.database (database.py:88): Initializing singleton Supabase client...
+[2026-07-06 18:05:38] INFO in backend.database (database.py:93): Supabase client initialized successfully.
+[2026-07-06 18:06:40] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-07-06 18:06:41] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-07-06 18:06:41] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-07-06 18:06:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-07-06 18:06:44] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-07-06 18:06:44] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-07-06 18:06:44] INFO in backend.dependencies (dependencies.py:52): Authenticating user via JWT token.
+[2026-07-06 18:06:44] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-07-06 18:06:44] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+[2026-07-06 18:06:44] ERROR in backend.dependencies (dependencies.py:77): Failed to retrieve user from Supabase: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/dependencies.py", line 66, in get_current_user
+    user_resp = supabase_client.auth.get_user(token)
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 689, in get_user
+    return parse_user_response(self._request("GET", "user", jwt=jwt))
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+[2026-07-06 18:06:51] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-07-06 18:06:52] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-07-06 18:06:52] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-07-06 18:06:53] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-07-06 18:06:53] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-07-06 18:06:53] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-07-06 18:06:53] INFO in backend.dependencies (dependencies.py:52): Authenticating user via JWT token.
+[2026-07-06 18:06:53] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-07-06 18:06:53] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+[2026-07-06 18:06:53] ERROR in backend.dependencies (dependencies.py:77): Failed to retrieve user from Supabase: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/dependencies.py", line 66, in get_current_user
+    user_resp = supabase_client.auth.get_user(token)
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 689, in get_user
+    return parse_user_response(self._request("GET", "user", jwt=jwt))
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+[2026-07-06 18:06:59] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-07-06 18:06:59] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-07-06 18:06:59] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-07-06 18:07:00] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-07-06 18:07:00] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-07-06 18:07:00] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-07-06 18:07:00] INFO in backend.dependencies (dependencies.py:52): Authenticating user via JWT token.
+[2026-07-06 18:07:00] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-07-06 18:07:00] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+[2026-07-06 18:07:00] ERROR in backend.dependencies (dependencies.py:77): Failed to retrieve user from Supabase: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/dependencies.py", line 66, in get_current_user
+    user_resp = supabase_client.auth.get_user(token)
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 689, in get_user
+    return parse_user_response(self._request("GET", "user", jwt=jwt))
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+[2026-07-06 18:07:14] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-07-06 18:07:14] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-07-06 18:07:14] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-07-06 18:07:15] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-07-06 18:07:15] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-07-06 18:07:15] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-07-06 18:07:15] INFO in backend.dependencies (dependencies.py:52): Authenticating user via JWT token.
+[2026-07-06 18:07:15] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-07-06 18:07:15] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+[2026-07-06 18:07:15] ERROR in backend.dependencies (dependencies.py:77): Failed to retrieve user from Supabase: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/dependencies.py", line 66, in get_current_user
+    user_resp = supabase_client.auth.get_user(token)
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 689, in get_user
+    return parse_user_response(self._request("GET", "user", jwt=jwt))
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+[2026-07-06 18:08:23] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-07-06 18:08:24] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-07-06 18:08:24] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-07-06 18:08:25] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-07-06 18:08:25] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-07-06 18:08:25] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-07-06 18:08:45] INFO in backend.routes.auth (auth.py:198): Received login request for email: bharadwaj.mbjj99@gmail.com
+[2026-07-06 18:08:46] INFO in httpx (_client.py:1025): HTTP Request: POST https://waibbesplrgqsnphhcav.supabase.co/auth/v1/token?grant_type=password "HTTP/2 200 OK"
+[2026-07-06 18:08:46] INFO in backend.routes.auth (auth.py:228): No bcrypt password_hash found in user_metadata; relying on Supabase auth.
+[2026-07-06 18:08:46] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/rest/v1/user_roles?select=role&user_id=eq.cab62411-45bf-4cb3-b401-de9534575271 "HTTP/2 200 OK"
+[2026-07-06 18:08:46] INFO in backend.security (security.py:128): JWT access token created successfully.
+[2026-07-06 18:08:46] INFO in backend.routes.auth (auth.py:247): Successful login for user: bharadwaj.mbjj99@gmail.com. Token generated.
+[2026-07-06 18:08:46] INFO in backend.dependencies (dependencies.py:52): Authenticating user via JWT token.
+[2026-07-06 18:08:46] INFO in backend.security (security.py:152): JWT token verification succeeded.
+[2026-07-06 18:08:47] INFO in httpx (_client.py:1025): HTTP Request: GET https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user "HTTP/2 403 Forbidden"
+[2026-07-06 18:08:47] ERROR in backend.dependencies (dependencies.py:77): Failed to retrieve user from Supabase: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 73, in _request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://waibbesplrgqsnphhcav.supabase.co/auth/v1/user'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/backend/dependencies.py", line 66, in get_current_user
+    user_resp = supabase_client.auth.get_user(token)
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_client.py", line 689, in get_user
+    return parse_user_response(self._request("GET", "user", jwt=jwt))
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Projects/MedAI-3D-CT-Scan-System/.venv/lib/python3.14/site-packages/supabase_auth/_sync/gotrue_base_api.py", line 76, in _request
+    raise handle_exception(e)  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+supabase_auth.errors.AuthApiError: invalid JWT: unable to parse or verify signature, token signature is invalid: signature is invalid

@@ -10,6 +10,8 @@ import { Brain, ArrowLeft, AlertTriangle, CheckCircle, Activity, Bot, Send, Load
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
 
+import { LoadingSkeleton } from '@/components/ui/LoadingSkeleton';
+
 interface AnalysisResult {
   prediction: string;
   confidence: number;
@@ -32,13 +34,28 @@ const ScanResults = () => {
   const [chatMessages, setChatMessages] = useState<{ role: string; content: string }[]>([]);
   const [chatInput, setChatInput] = useState('');
   const [chatLoading, setChatLoading] = useState(false);
+  const [reportLoading, setReportLoading] = useState(false);
+  const [reportId, setReportId] = useState<string | null>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const location = useLocation();
 
   useEffect(() => {
     fetchScan();
+    checkExistingReport();
   }, [id, location.state]);
+
+  useEffect(() => {
+    let interval: any;
+
+    if (scan?.status === "pending") {
+      interval = setInterval(fetchScan, 3000);
+    }
+
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [scan]);
 
   const fetchScan = async () => {
     if (!id) return;
@@ -57,12 +74,30 @@ const ScanResults = () => {
         setAnalyzing(false);
       } else if (scanData?.status === 'pending') {
         setAnalyzing(true);
-        setTimeout(fetchScan, 3000);
       }
     } catch {
       // ignore
     }
     setLoading(false);
+  };
+
+  const checkExistingReport = async () => {
+    if (!id) return;
+    try {
+      const token = localStorage.getItem('medai_token');
+      const res = await fetch('/api/reports/history?limit=100', {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      if (res.ok) {
+        const reports = await res.json();
+        const existingReport = reports.find((r: any) => r.scan_id === id);
+        if (existingReport) {
+          setReportId(existingReport.id);
+        }
+      }
+    } catch {
+      // ignore
+    }
   };
 
   // Draw heatmap overlay on canvas
@@ -135,10 +170,68 @@ const ScanResults = () => {
     }
   };
 
+  const generateReport = async () => {
+    try {
+      setReportLoading(true);
+      const scanId = id;
+
+      const token = localStorage.getItem("medai_token");
+
+      const res = await fetch(`/api/reports/generate/${scanId}`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to generate report");
+      }
+
+      const data = await res.json();
+
+      setReportId(data.id);
+
+      toast({
+        title: "Report Generated",
+        description: "Medical report generated successfully.",
+      });
+
+    } catch (err: any) {
+      toast({
+        title: "Error",
+        description: err.message,
+        variant: "destructive",
+      });
+    } finally {
+      setReportLoading(false);
+    }
+  };
+
+  const downloadReport = () => {
+    if (!reportId) return;
+
+    window.open(
+      `/api/reports/download/${reportId}`,
+      "_blank"
+    );
+  };
+
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-background">
-        <Loader2 className="w-8 h-8 animate-spin text-primary" />
+      <div className="min-h-screen bg-background pb-12">
+        <header className="sticky top-0 z-50 glass-card border-b">
+          <div className="container mx-auto px-4 h-16 flex items-center gap-4">
+            <Link to="/dashboard"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>
+            <div className="flex items-center gap-2">
+              <img src="/med ai.png" className="w-8 h-8 object-contain" alt="Med AI Logo" />
+              <span className="font-display font-bold">Analysis Results</span>
+            </div>
+          </div>
+        </header>
+        <div className="container mx-auto px-4 py-8">
+          <LoadingSkeleton variant="card" count={3} />
+        </div>
       </div>
     );
   }
@@ -146,7 +239,7 @@ const ScanResults = () => {
   const riskColor = result?.risk_level === 'high' ? 'destructive' : result?.risk_level === 'moderate' ? 'secondary' : 'default';
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-12">
       <header className="sticky top-0 z-50 glass-card border-b">
         <div className="container mx-auto px-4 h-16 flex items-center gap-4">
           <Link to="/dashboard"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>
@@ -190,6 +283,26 @@ const ScanResults = () => {
                   </div>
                   <div className="w-full bg-secondary rounded-full h-3 mb-2">
                     <div className="h-3 rounded-full gradient-medical transition-all" style={{ width: `${result.confidence * 100}%` }} />
+                  </div>
+
+                  <div className="flex gap-4 mt-6">
+                    <Button
+                      onClick={generateReport}
+                      disabled={reportLoading}
+                    >
+                      {reportLoading
+                        ? "Generating..."
+                        : "Generate Medical Report"}
+                    </Button>
+
+                    {reportId && (
+                      <Button
+                        variant="outline"
+                        onClick={downloadReport}
+                      >
+                        Download Report
+                      </Button>
+                    )}
                   </div>
                 </CardContent>
               </Card>

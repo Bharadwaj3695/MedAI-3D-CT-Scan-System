@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Textarea } from '@/components/ui/textarea';
 import { Brain, Upload, ArrowLeft, FileImage, X, Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { Progress } from '@/components/ui/progress';
 
 const UploadScan = () => {
   const { user } = useAuth();
@@ -17,9 +18,11 @@ const UploadScan = () => {
   const { toast } = useToast();
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
-  const [scanType, setScanType] = useState('2d');
+  const [scanType, setScanType] = useState('CT');
   const [notes, setNotes] = useState('');
   const [uploading, setUploading] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [stageText, setStageText] = useState('');
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const f = e.target.files?.[0];
@@ -48,8 +51,39 @@ const UploadScan = () => {
   }, []);
 
   const handleUpload = async () => {
-    if (!file) return;
+    if (!file || uploading) return;
     setUploading(true);
+    setProgress(0);
+    setStageText("Validating file...");
+
+    // Smooth progress simulation
+    let currentProgress = 0;
+    const interval = setInterval(() => {
+      currentProgress += 1;
+      
+      if (currentProgress < 10) {
+        setStageText("Validating file...");
+      } else if (currentProgress < 25) {
+        setStageText("Uploading CT scan...");
+      } else if (currentProgress < 45) {
+        setStageText("AI preprocessing...");
+      } else if (currentProgress < 65) {
+        setStageText("Running lung nodule detection...");
+      } else if (currentProgress < 85) {
+        setStageText("Generating Grad-CAM...");
+      } else if (currentProgress < 95) {
+        setStageText("Saving analysis results...");
+      } else {
+        setStageText("Finalizing analysis...");
+      }
+
+      if (currentProgress <= 95) {
+        setProgress(currentProgress);
+      } else if (currentProgress > 95 && currentProgress < 99) {
+        setProgress(prev => Math.min(prev + 0.5, 99));
+      }
+    }, 120);
+
     try {
       if (!user) {
         throw new Error("You must be logged in to upload a scan. Please sign in.");
@@ -74,20 +108,34 @@ const UploadScan = () => {
       
       const responseData = await res.json();
 
-      toast({ title: 'Scan uploaded and analyzed successfully!', description: 'Redirecting to results.' });
-      navigate(`/results/${responseData.scan_id}`);
+      clearInterval(interval);
+      setProgress(100);
+      setStageText("Complete!");
+
+      // Brief delay to allow the user to see the 100% complete state
+      setTimeout(() => {
+        toast({ title: 'Scan uploaded and analyzed successfully!', description: 'Redirecting to results.' });
+        navigate(`/results/${responseData.scan_id}`);
+      }, 600);
+
     } catch (err: any) {
-      toast({ title: 'Upload/Analysis failed', description: err.message, variant: 'destructive' });
-    } finally {
+      clearInterval(interval);
+      setProgress(0);
+      setStageText("");
       setUploading(false);
+      toast({ title: 'Upload/Analysis failed', description: err.message, variant: 'destructive' });
     }
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-12">
       <header className="sticky top-0 z-50 glass-card border-b">
         <div className="container mx-auto px-4 h-16 flex items-center gap-4">
-          <Link to="/dashboard"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>
+          <Link to="/dashboard">
+            <Button variant="ghost" size="icon" disabled={uploading}>
+              <ArrowLeft className="w-5 h-5" />
+            </Button>
+          </Link>
           <div className="flex items-center gap-2">
             <img src="/med ai.png" className="w-8 h-8 object-contain" alt="Med AI Logo" />
             <span className="font-display font-bold">Upload Scan</span>
@@ -103,19 +151,32 @@ const UploadScan = () => {
           <CardContent className="space-y-6">
             {/* Drop zone */}
             <div
-              className={`border-2 border-dashed rounded-xl p-8 text-center transition-colors cursor-pointer
-                ${file ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/50'}`}
+              className={`border-2 border-dashed rounded-xl p-8 text-center transition-colors
+                ${file ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/50'}
+                ${uploading ? 'opacity-60 cursor-not-allowed pointer-events-none' : 'cursor-pointer'}`}
               onDragOver={e => e.preventDefault()}
-              onDrop={handleDrop}
-              onClick={() => document.getElementById('file-input')?.click()}
+              onDrop={uploading ? undefined : handleDrop}
+              onClick={uploading ? undefined : () => document.getElementById('file-input')?.click()}
             >
-              <input id="file-input" type="file" className="hidden" accept="image/*,.dcm,.nii,.nii.gz" onChange={handleFileChange} />
+              <input 
+                id="file-input" 
+                type="file" 
+                className="hidden" 
+                accept="image/*,.dcm,.nii,.nii.gz" 
+                onChange={handleFileChange} 
+                disabled={uploading}
+              />
               {preview ? (
                 <div className="relative inline-block">
                   <img src={preview} alt="Preview" className="max-h-64 rounded-lg mx-auto" />
-                  <button onClick={e => { e.stopPropagation(); setFile(null); setPreview(null); }} className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-destructive text-destructive-foreground flex items-center justify-center">
-                    <X className="w-4 h-4" />
-                  </button>
+                  {!uploading && (
+                    <button 
+                      onClick={e => { e.stopPropagation(); setFile(null); setPreview(null); }} 
+                      className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-destructive text-destructive-foreground flex items-center justify-center"
+                    >
+                      <X className="w-4 h-4" />
+                    </button>
+                  )}
                 </div>
               ) : file ? (
                 <div className="flex flex-col items-center gap-2">
@@ -138,22 +199,52 @@ const UploadScan = () => {
             <div className="grid gap-4">
               <div className="space-y-2">
                 <Label>Scan Type</Label>
-                <Select value={scanType} onValueChange={setScanType}>
+                <Select value={scanType} onValueChange={setScanType} disabled={uploading}>
                   <SelectTrigger><SelectValue /></SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="2d">2D CT Scan</SelectItem>
-                    <SelectItem value="3d">3D CT Scan</SelectItem>
+                    <SelectItem value="CT">CT Scan</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
               <div className="space-y-2">
                 <Label>Notes (optional)</Label>
-                <Textarea value={notes} onChange={e => setNotes(e.target.value)} placeholder="Patient history, symptoms, etc." rows={3} />
+                <Textarea 
+                  value={notes} 
+                  onChange={e => setNotes(e.target.value)} 
+                  placeholder="Patient history, symptoms, etc." 
+                  rows={3} 
+                  disabled={uploading}
+                />
               </div>
             </div>
 
-            <Button className="w-full h-12 gradient-medical text-primary-foreground border-0" onClick={handleUpload} disabled={!file || uploading}>
-              {uploading ? <><Loader2 className="w-4 h-4 mr-2 animate-spin" /> Analyzing...</> : <><Upload className="w-4 h-4 mr-2" /> Upload & Analyze</>}
+            {/* Upload Progress */}
+            {uploading && (
+              <div className="space-y-2.5 p-4 rounded-xl bg-secondary/30 border border-border/50 animate-in fade-in duration-300">
+                <div className="flex justify-between text-sm font-medium">
+                  <span className="text-muted-foreground animate-pulse">{stageText}</span>
+                  <span className="text-primary font-mono">{Math.round(progress)}%</span>
+                </div>
+                <Progress value={progress} className="h-2" />
+              </div>
+            )}
+
+            <Button 
+              className="w-full h-12 gradient-medical text-primary-foreground border-0 shadow-lg shadow-primary/10" 
+              onClick={handleUpload} 
+              disabled={!file || uploading}
+            >
+              {uploading ? (
+                <>
+                  <Loader2 className="w-4 h-4 mr-2 animate-spin" /> 
+                  Processing Analysis...
+                </>
+              ) : (
+                <>
+                  <Upload className="w-4 h-4 mr-2" /> 
+                  Upload & Analyze
+                </>
+              )}
             </Button>
           </CardContent>
         </Card>

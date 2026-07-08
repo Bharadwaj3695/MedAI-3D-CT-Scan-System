@@ -64,7 +64,7 @@ def register_exception_handlers(app: FastAPI) -> None:
     Converts custom AppExceptions into consistent JSON responses.
     """
     @app.exception_handler(AppException)
-    async def app_exception_handler(request: Request, exc: AppException) -> JSONResponse:
+    def app_exception_handler(request: Request, exc: AppException) -> JSONResponse:
         content: Dict[str, Any] = {
             "success": False,
             "error": {
@@ -81,7 +81,7 @@ def register_exception_handlers(app: FastAPI) -> None:
         )
 
     @app.exception_handler(Exception)
-    async def global_exception_handler(request: Request, exc: Exception) -> JSONResponse:
+    def global_exception_handler(request: Request, exc: Exception) -> JSONResponse:
         # Log the raw exception here for debugging
         # import logging
         # logging.getLogger(__name__).error(f"Unhandled exception: {exc}", exc_info=True)

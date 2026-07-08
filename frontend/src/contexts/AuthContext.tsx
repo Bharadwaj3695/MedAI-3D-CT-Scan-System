@@ -1,15 +1,5 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
-
-interface User {
-  id: string;
-  email: string;
-  user_metadata: any;
-}
-
-interface Session {
-  access_token: string;
-  refresh_token: string;
-}
+import React, { createContext, useContext, useEffect, useState } from "react";
+import { AuthService, User, Session } from "../services/auth.service";
 
 interface AuthContextType {
   user: User | null;
@@ -27,51 +17,72 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const useAuth = () => {
   const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error('useAuth must be used within AuthProvider');
+
+  if (!ctx) {
+    throw new Error("useAuth must be used within AuthProvider");
+  }
+
   return ctx;
 };
 
-export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
   const [userRole, setUserRole] = useState<string | null>(null);
 
+  /**
+   * Fetch authenticated user details
+   */
   const fetchCurrentUser = async (token: string) => {
     try {
-      const res = await fetch('/api/auth/me', {
-        headers: { 'Authorization': `Bearer ${token}` }
+      const data = await AuthService.getCurrentUser(token);
+
+      setUser(data.user);
+      setUserRole(data.role);
+
+      setSession({
+        access_token: token,
+        refresh_token: "",
       });
-      if (res.ok) {
-        const data = await res.json();
-        setUser(data.user);
-        setUserRole(data.role);
-        setSession({ access_token: token, refresh_token: '' });
-      } else {
-        throw new Error("Invalid session");
-      }
-    } catch {
+    } catch (err) {
+      console.error("Failed to fetch current user:", err);
+
+      localStorage.removeItem("medai_token");
+
       setUser(null);
       setSession(null);
       setUserRole(null);
-      localStorage.removeItem('medai_token');
     } finally {
       setLoading(false);
     }
   };
 
+  /**
+   * Restore session on page refresh
+   */
   useEffect(() => {
-    // Check if coming back from Google OAuth
+    // Handle Google OAuth redirect
     if (window.location.hash) {
       const hashParams = new URLSearchParams(window.location.hash.substring(1));
-      const accessToken = hashParams.get('access_token');
+
+      const accessToken = hashParams.get("access_token");
+
       if (accessToken) {
-        localStorage.setItem('medai_token', accessToken);
-        window.history.replaceState(null, '', window.location.pathname);
+        localStorage.setItem("medai_token", accessToken);
+
+        window.history.replaceState(
+          null,
+          "",
+          window.location.pathname
+        );
       }
     }
 
-    const token = localStorage.getItem('medai_token');
+    const token = localStorage.getItem("medai_token");
+
     if (token) {
       fetchCurrentUser(token);
     } else {
@@ -79,69 +90,95 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   }, []);
 
-  const handleAuthResponse = async (res: Response) => {
-    const data = await res.json();
-    if (!res.ok) {
-      throw new Error(data.detail || "Authentication failed");
-    }
-    if (data.session && data.session.access_token) {
-      localStorage.setItem('medai_token', data.session.access_token);
-      await fetchCurrentUser(data.session.access_token);
-    }
-  };
+  /**
+   * Process login response
+   */
+  const handleAuthResponse = async (data: any) => {
+    if (data.access_token) {
+      localStorage.setItem("medai_token", data.access_token);
 
-  const signUp = async (email: string, password: string, fullName: string) => {
-    const res = await fetch('/api/auth/signup', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password })
-    });
-    // the backend will handle full_name natively in future, currently ignores it
-    await handleAuthResponse(res);
-  };
-
-  const signIn = async (email: string, password: string) => {
-    const res = await fetch('/api/auth/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password })
-    });
-    await handleAuthResponse(res);
-  };
-
-  const signInWithGoogle = async () => {
-    const res = await fetch('/api/auth/google');
-    if (res.ok) {
-      const data = await res.json();
-      if (data.url) {
-        window.location.href = data.url;
-      }
+      await fetchCurrentUser(data.access_token);
     } else {
-      throw new Error("Could not initialize Google log in from backend.");
+      throw new Error("Authentication token was not returned.");
     }
   };
 
-  const signOut = async () => {
-    const token = localStorage.getItem('medai_token');
-    if (token) {
-      await fetch('/api/auth/logout', {
-        method: 'POST',
-        headers: { 'Authorization': `Bearer ${token}` }
-      }).catch(() => {});
+  /**
+   * Register user
+   */
+  const signUp = async (
+    email: string,
+    password: string,
+    fullName: string
+  ) => {
+    await AuthService.signUp(email, password);
+
+    // Backend currently returns only user info.
+    // User must login after successful registration.
+  };
+
+  /**
+   * Login user
+   */
+  ync (email: string, password: string) => {
+    const const signIn = asdata = await AuthService.signIn(email, password);
+
+    await handleAuthResponse(data);
+  };
+
+  /**
+   * Google OAuth
+   */
+  const signInWithGoogle = async () => {
+    const data = await AuthService.signInWithGoogle();
+
+    if (data.url) {
+      window.location.href = data.url;
     }
-    localStorage.removeItem('medai_token');
+  };
+
+  /**
+   * Logout
+   */
+  const signOut = async () => {
+    const token = localStorage.getItem("medai_token");
+
+    if (token) {
+      try {
+        await AuthService.signOut(token);
+      } catch (err) {
+        console.warn("Logout request failed:", err);
+      }
+    }
+
+    localStorage.removeItem("medai_token");
+
     setUser(null);
     setSession(null);
     setUserRole(null);
   };
 
+  /**
+   * Reset Password
+   */
   const resetPassword = async (email: string) => {
-    // Implement via backend soon
-    alert("Reset password requires further backend implementation.");
+    alert("Reset password will be implemented in the backend.");
   };
 
   return (
-    <AuthContext.Provider value={{ user, session, loading, userRole, signUp, signIn, signInWithGoogle, signOut, resetPassword }}>
+    <AuthContext.Provider
+      value={{
+        user,
+        session,
+        loading,
+        userRole,
+        signUp,
+        signIn,
+        signInWithGoogle,
+        signOut,
+        resetPassword,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );
